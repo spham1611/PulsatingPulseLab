@@ -1,15 +1,21 @@
-drive_duration_sec = 1.2e-07
-drive_sigma_sec = 1.5e-08
-pi_amp = 0.09299941682393557
-drive_sigma = 67
+"""
+    The following parameteres were last 
+    updated on 7th September, 2022
+    + Qubit: 0
+    + Backend: ibm_oslo
+    + Pulse instruction: Pi pulse on subspace (0-1)
+"""
 
-with pulse.build(backend=backend, name=r'$X_{\pi}^{01}$ sched') as pi01:
-    drive_duration = get_closest_multiple_of_16(pulse.seconds_to_samples(drive_duration_sec))
-    drive_sigma = pulse.seconds_to_samples(drive_sigma_sec)
+# Pulse parameters
+drive_duration_01 = 544
+drive_sigma_01 = 67
+drive_amplitude_01 = 0.07902104192057431
+
+# Pulse instruction
+with pulse.build(backend=backend) as inst_x_pi_01:
     drive_chan = pulse.drive_channel(qubit)
-    pulse.play(pulse.Gaussian(duration=drive_duration,
-                              amp=pi_amp,
-                              sigma=drive_sigma,
-                              name=r'$X_{\pi}^{01}$'), drive_chan)
+    pulse.play(pulse.Gaussian(duration=drive_duration_01,
+                              amp=drive_amplitude_01,
+                              sigma=drive_sigma_01), drive_chan)
                               
-pi01.draw()
+inst_x_pi_01.draw()
