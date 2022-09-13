@@ -1,3 +1,15 @@
+### General pulse instruction ###
+
+with pulse.build(backend=backend) as inst_x_pi_01:
+    drive_chan = pulse.drive_channel(qubit)
+    pulse.play(pulse.Gaussian(duration=drive_duration_01,
+                              amp=drive_amplitude_01,
+                              sigma=drive_sigma_01), drive_chan)
+                              
+inst_x_pi_01.draw()
+
+### ibmq_oslo ###
+
 """
     The following parameteres were last 
     updated on 7th September, 2022
@@ -11,11 +23,19 @@ drive_duration_01 = 544
 drive_sigma_01 = 67
 drive_amplitude_01 = 0.07902104192057431
 
-# Pulse instruction
-with pulse.build(backend=backend) as inst_x_pi_01:
-    drive_chan = pulse.drive_channel(qubit)
-    pulse.play(pulse.Gaussian(duration=drive_duration_01,
-                              amp=drive_amplitude_01,
-                              sigma=drive_sigma_01), drive_chan)
-                              
-inst_x_pi_01.draw()
+
+### ibmq_manila ###
+
+"""
+    The following parameteres were last 
+    updated on 13rd September, 2022
+    + Qubit: 0
+    + Backend: ibmq_manila
+    + Pulse instruction: Pi pulse on subspace (0-1)
+"""
+
+# Pulse parameters
+drive_duration_01 = 544
+drive_sigma_01 = 67
+drive_amplitude_01 = 0.09265405516803696
+
