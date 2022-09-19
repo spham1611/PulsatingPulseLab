@@ -26,16 +26,11 @@ drive_amplitude_01 = 0.07902104192057431
 
 ### ibmq_manila ###
 
-"""
-    The following parameteres were last 
-    updated on 13rd September, 2022
-    + Qubit: 0
-    + Backend: ibmq_manila
-    + Pulse instruction: Pi pulse on subspace (0-1)
-"""
+"""The following parameteres were last updated on 19th September, 2022
+   This is the ibmq_manila backend, qubit 0, on subspace (0-1)"""
 
 # Pulse parameters
+drive_frequency_01 = 4962317255.07658
 drive_duration_01 = 544
 drive_sigma_01 = 67
-drive_amplitude_01 = 0.09265405516803696
-
+drive_amplitude_01 = 0.09281388317671437
