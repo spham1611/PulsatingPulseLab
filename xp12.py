@@ -10,15 +10,12 @@ inst_x_fullpi_12.draw()
 
 ### ibmq_manila ###
 
-"""
-    The following parameteres were last 
-    updated on 14rd September, 2022
-    + Qubit: 0
-    + Backend: ibmq_manila
-"""
+""" The following parameteres were last updated on 14rd September, 2022
+    This is the ibmq_manila backend, qubit 0, on subspace (1-2) """
 
 # Pulse parameters
+drive_frequency_12 = 4618781329.919704
 drive_duration_01 = 160
 drive_sigma_01 = 40
-drive_amplitude_01 = 0.17102045531902912
+drive_amplitude_12 = 0.17306617215735373
 
