@@ -29,8 +29,14 @@ drive_amplitude_01 = 0.07902104192057431
 """The following parameteres were last updated on 19th September, 2022
    This is the ibmq_manila backend, qubit 0, on subspace (0-1)"""
 
-# Pulse parameters
+# Pulse parameters (slow gate)
 drive_frequency_01 = 4962317255.07658
 drive_duration_01 = 544
 drive_sigma_01 = 67
 drive_amplitude_01 = 0.09281388317671437
+
+# Pulse parameters (fast gate)
+drive_frequency_01 = 4962131445.5726
+drive_duration_01 = 160
+drive_sigma_01 = 40
+drive_amplitude_01 = 0.2127889627295832
