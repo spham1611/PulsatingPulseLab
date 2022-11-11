@@ -1,3 +1,6 @@
 .DS_Store
 QuantumExperiment/.DS_Store
 .ipynb_checkpoints
+QuantumExperiment/RamseyExperiment/
+QuantumExperiment/Ramsey/Data 
+.idea/
